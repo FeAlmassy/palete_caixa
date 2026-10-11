@@ -2,11 +2,12 @@ from sqlalchemy import Engine
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import IntegrityError
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 import bcrypt
 from datetime import datetime
 
-load_dotenv("db_palete_caixa.env", override=True)
+load_dotenv(Path(__file__).resolve().parent.parent / "db_palete_caixa.env", override=True)
 
 HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
