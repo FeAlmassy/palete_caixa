@@ -9,10 +9,11 @@ O boto3 só é importado quando o backend s3 é escolhido.
 """
 
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv("db_palete_caixa.env")
+load_dotenv(Path(__file__).resolve().parent.parent / "db_palete_caixa.env")
 
 TIPO = os.getenv("ARMAZENAMENTO", "local").strip().lower()
 
