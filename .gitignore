@@ -7,3 +7,6 @@
 *.env
 __pycache__
 solucoes_salvas
+pyproject.toml
+uv.lock
+src
