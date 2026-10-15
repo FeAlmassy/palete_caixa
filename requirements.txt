@@ -136,7 +136,7 @@ psycopg2-binary==2.9.13
     # via palete-caixa (pyproject.toml)
 ptyprocess==0.7.0
     # via pexpect
-pulp==4.0.1
+pulp==3.3.2
     # via palete-caixa (pyproject.toml)
 pure-eval==0.2.4
     # via stack-data
